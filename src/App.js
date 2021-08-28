@@ -13,7 +13,9 @@ if(num >= 5){
   return (
     <div className="App">
       <header className="App-header">
-       <Hello/>
+
+       <Hello to="Future Alperen" from="current Alperen"/>
+       <Hello to="Future Alperen" />
 
         <img src={logo} className="App-logo" alt="logo" />
         
