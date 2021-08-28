@@ -1,44 +1,29 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+import {Route, Switch} from "react-router-dom"
 import './App.css';
 import Hello from './components/Hello'
+import Home from "./components/Home";
+import Navbar from './components/Navbar'
 
 function App() {
-const num = getNumber();
-let msg;
-if(num >= 5){
-  msg = "number is greater than 5"
-} else {
-  msg = "number is not gereater than 5"
-}
+
   return (
     <div className="App">
-      <header className="App-header">
-
-       <Hello to="Future Alperen" from="current Alperen"/>
-       <Hello to="Future Alperen" />
-
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <p>{getMood()}</p>
-        <span>The number is: {num}</span>
-        <span>{msg}</span>
-
-        {
-          num >= 5 && 
-          <p>I agree that the number is greater than 5</p>
-        }
-
-      </header>
+      {/* Navbar */}
+      <Navbar/>
+      {/* Navbar */}
+     
+      {/* Routes */}
+      <Switch>
+        <Route path="/hello" render={() => <Hello to="you" from="alperen" />}></Route>
+        <Route path="/" component={Home}></Route>
+      </Switch>
+      {/* Routes */}
     </div>
   );
 }
 
-function getMood() {
-  const moods = ['angry', 'Happy', "silly", "quiet"];
-  return moods[Math.floor(Math.random() * moods.length)];
-}
-function getNumber() {
-  return Math.floor(Math.random() * 10) + 1;
-}
+
 
 export default App;
