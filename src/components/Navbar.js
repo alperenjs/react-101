@@ -22,6 +22,11 @@ export default function Navbar() {
                                 <span className="nav-link" >Hello</span>
                             </li>
                            </NavLink>
+                           <NavLink exact activeClassName="active-link" to="/hook">
+                            <li className="nav-item">
+                                <span className="nav-link" >Hook</span>
+                            </li>
+                           </NavLink>
                         </ul>
                     </div>
                 </div>
