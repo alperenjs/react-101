@@ -13,6 +13,9 @@ export default function Hello(props) {
 
     return (
         <div>
+            <h5><span className="Hello-desc">Whats here? </span>In this page; I tested components, params and conditional classes.</h5>
+            <br/>
+            <br/>
             <h1 style={colors}>Hello from {props.from || "ali"} to {props.to}</h1>
             {/* <h1 className={winner ? 'win' : 'lose'}></h1> */}
             {/* adding conditional class */}
