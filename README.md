@@ -16,6 +16,8 @@
     101
   
  &#x268A; Starting React.JS project with npx cli <br/>
+ &#x268A; Props and components are created <br/>
+ &#x268A; Router is added <br/>
  
   
 
