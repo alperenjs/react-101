@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello'
 
 function App() {
 const num = getNumber();
@@ -12,7 +13,10 @@ if(num >= 5){
   return (
     <div className="App">
       <header className="App-header">
+       <Hello/>
+
         <img src={logo} className="App-logo" alt="logo" />
+        
         <p>{getMood()}</p>
         <span>The number is: {num}</span>
         <span>{msg}</span>
