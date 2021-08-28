@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Hello.css"
 
 export default function Hello(props) {
     const colors = {fontSize: '16px', backgroundColor: "aqaua", color:"black"};
@@ -18,7 +19,7 @@ export default function Hello(props) {
 
 
             <p>{getMood()}</p>
-        <span>The number is: {num}</span>
+        <span className="Hello-test-class">The number is: {num}</span>
         <span>{msg}</span>
 
         {
