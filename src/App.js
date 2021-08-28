@@ -6,9 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>{getMood()}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +18,12 @@ function App() {
       </header>
     </div>
   );
+}
+
+function getMood(){
+  const moods = ['angry', 'hungrh', "silly", "quiet"];
+  return moods[Math.floor(Math.random() * moods.length)];
+
 }
 
 export default App;
