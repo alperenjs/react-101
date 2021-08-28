@@ -2,28 +2,37 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+const num = getNumber();
+let msg;
+if(num >= 5){
+  msg = "number is greater than 5"
+} else {
+  msg = "number is not gereater than 5"
+}
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>{getMood()}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <span>The number is: {num}</span>
+        <span>{msg}</span>
+
+        {
+          num >= 5 && 
+          <p>I agree that the number is greater than 5</p>
+        }
+
       </header>
     </div>
   );
 }
 
-function getMood(){
-  const moods = ['angry', 'hungrh', "silly", "quiet"];
+function getMood() {
+  const moods = ['angry', 'Happy', "silly", "quiet"];
   return moods[Math.floor(Math.random() * moods.length)];
-
+}
+function getNumber() {
+  return Math.floor(Math.random() * 10) + 1;
 }
 
 export default App;
