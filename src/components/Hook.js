@@ -10,7 +10,6 @@ function Hook() {
         <div>
             <h1>The count: {count} </h1>
             <button onClick={() => setCount(count + 1)}>Add 1</button>
-
             <br/>
             <br/>
             <br/>

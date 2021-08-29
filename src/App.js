@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Hello from './components/Hello'
 import Home from "./components/Home";
+import UseEffect from "./components/UseEffect";
 import Hook from "./components/Hook";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       {/* Routes */}
       <Switch>
         <Route path="/hello" render={() => <Hello to="you" from="alperen" />}></Route>
+        <Route path="/useeffect" component={UseEffect}></Route>
         <Route path="/hook" component={Hook}></Route>
         <Route path="/" component={Home}></Route>
       </Switch>

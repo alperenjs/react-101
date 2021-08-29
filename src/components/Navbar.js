@@ -27,6 +27,11 @@ export default function Navbar() {
                                 <span className="nav-link" >Hook</span>
                             </li>
                            </NavLink>
+                           <NavLink exact activeClassName="active-link" to="/useeffect">
+                            <li className="nav-item">
+                                <span className="nav-link" >UseEffect</span>
+                            </li>
+                           </NavLink>
                         </ul>
                     </div>
                 </div>
