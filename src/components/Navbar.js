@@ -32,6 +32,11 @@ export default function Navbar() {
                                 <span className="nav-link" >UseEffect</span>
                             </li>
                            </NavLink>
+                           <NavLink exact activeClassName="active-link" to="/useeffectapi">
+                            <li className="nav-item">
+                                <span className="nav-link" >UseEffectWithAPI</span>
+                            </li>
+                           </NavLink>
                         </ul>
                     </div>
                 </div>
