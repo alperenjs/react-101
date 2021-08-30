@@ -37,6 +37,11 @@ export default function Navbar() {
                                 <span className="nav-link" >UseEffectWithAPI</span>
                             </li>
                            </NavLink>
+                           <NavLink exact activeClassName="active-link" to="/todo">
+                            <li className="nav-item">
+                                <span className="nav-link" >To Do App</span>
+                            </li>
+                           </NavLink>
                         </ul>
                     </div>
                 </div>

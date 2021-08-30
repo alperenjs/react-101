@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import UseEffect from "./components/UseEffect";
 import Hook from "./components/Hook";
 import UseEffectAPI from "./components/UseEffectAPI";
+import TodoApp from "./components/TodoApp";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/useeffect" component={UseEffect}></Route>
         <Route path="/hook" component={Hook}></Route>
         <Route path="/useeffectapi" component={UseEffectAPI}></Route>
+        <Route path="/todo" component={TodoApp}></Route>
         <Route path="/" component={Home}></Route>
       </Switch>
       {/* Routes */}
