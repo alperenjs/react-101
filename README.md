@@ -13,7 +13,7 @@
 ## Process
 
 
-    101
+   this project is a spontion practice of <a target="_blank" href="https://www.udemy.com/course/modern-react-bootcamp/learn/lecture/14433820?start=15#overview">udemy course</a>
   
  &#x268A; Starting React.JS project with npx cli <br/>
  &#x268A; Props and components are created <br/>
